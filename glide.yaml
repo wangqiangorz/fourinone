@@ -1,0 +1,7 @@
+package: github.com/wangqiangorz/fourinone
+import:
+- package: github.com/BurntSushi/toml
+  version: ^0.3.1
+- package: go.uber.org/zap
+- package: github.com/satori/go.uuid
+  version: v1.2.0

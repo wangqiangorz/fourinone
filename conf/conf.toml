@@ -1,0 +1,19 @@
+[park]
+    servicename="parkService"
+    servers=["127.0.0.1:8081"]
+    trynum = 3
+[worker]
+    servicename="workerService"
+    server="127.0.0.1:8082"
+[cache]
+    servicename="cacheService"
+    servers=["127.0.0.1:8083"]
+[cachefacade]
+    servicename="cachefacadeService"
+    server="127.0.0.1:8084"
+    trynum=100
+[cachegroup]
+    servers=[["127.0.0.1:8085"]]
+[common]
+    conntimeout = 2000
+    readtimeout = 5000
