@@ -107,6 +107,10 @@ func (parkProxy *ParkProxy) GetServiceGroupServer() []string {
 	return parkProxy.groupserver
 }
 
+func (parkProxy *ParkProxy) GetSessionID() (string, error) {
+	return parkProxy.parkClient.GetSessionID()
+}
+
 func Ketchup2BeanVal(ketchup *model.Ketchup, domain, node string) *model.BeanVal {
 	nodevalue, ok := ketchup.GetAny(util.GetDomainNodeKey(domain, node))
 	if !ok {
