@@ -12,9 +12,9 @@ import (
 func Test(t *testing.T) {
 	monitor.InitLog()
 	err := common.SetConfFile("../../conf/conf.toml")
-	// go StartCacheByHost("cacheService", "127.0.0.1", 8085, []string{"127.0.0.1:8085"})
-	// go StartCacheByHost("cacheService", "127.0.0.1", 8086, []string{"127.0.0.1:8086"})
-	// go StartCacheByHost("cacheService", "127.0.0.1", 8087, []string{"127.0.0.1:8087"})
+	go StartCacheByHost("cacheService", "127.0.0.1", 8085, []string{"127.0.0.1:8085"})
+	go StartCacheByHost("cacheService", "127.0.0.1", 8086, []string{"127.0.0.1:8086"})
+	go StartCacheByHost("cacheService", "127.0.0.1", 8087, []string{"127.0.0.1:8087"})
 	go StartCacheFacade()
 	time.Sleep(3 * time.Second)
 	proxy, err := GetCacheFacade()

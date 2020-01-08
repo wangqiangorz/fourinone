@@ -1,8 +1,0 @@
-{"level":"INFO","time":"2019-10-23T14:46:27.088+0800","caller":"service/park_leader.go:143","msg":"park want to be master","serviceName":"cacheService","host":"127.0.0.1","port":8087}
-{"level":"INFO","time":"2019-10-23T14:46:27.089+0800","caller":"service/park_leader.go:39","msg":"set Park Master","host":"127.0.0.1","port":8087}
-{"level":"INFO","time":"2019-10-23T14:46:27.088+0800","caller":"service/park_leader.go:143","msg":"park want to be master","serviceName":"cacheService","host":"127.0.0.1","port":8085}
-{"level":"INFO","time":"2019-10-23T14:46:27.089+0800","caller":"service/park_leader.go:39","msg":"set Park Master","host":"127.0.0.1","port":8085}
-{"level":"INFO","time":"2019-10-23T14:46:27.088+0800","caller":"service/park_leader.go:143","msg":"park want to be master","serviceName":"cacheService","host":"127.0.0.1","port":8086}
-{"level":"INFO","time":"2019-10-23T14:46:27.089+0800","caller":"service/park_leader.go:39","msg":"set Park Master","host":"127.0.0.1","port":8086}
-{"level":"INFO","time":"2019-10-23T14:46:27.090+0800","caller":"context/bean_context.go:39","msg":"start park success","serviceName":"cacheService","host":"127.0.0.1","port":8086,"groupservers":["127.0.0.1:8086"]}
-{"level":"INFO","time":"2019-10-23T14:46:27.090+0800","caller":"context/bean_context.go:39","msg":"start park success","serviceName":"cacheService","host":"127.0.0.1","port":8085,"groupservers":["127.0.0.1:8085"]}

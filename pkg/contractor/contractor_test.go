@@ -13,7 +13,7 @@ func Test(t *testing.T) {
 	common.SetConfFile("../../conf/conf.toml")
 	monitor.InitLog()
 	c := NewContractor(func(input *model.Pikachu) (*model.Pikachu, error) {
-		workers, err := GetWaitingWorkerByWorkerType("test")
+		workers, err := GetWaitingWorkerByWorkerType("demo")
 		if err != nil {
 			fmt.Println(err.Error())
 			return nil, err

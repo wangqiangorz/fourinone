@@ -115,7 +115,7 @@ func (parkLeader *ParkLeader) GetParkLeader() (*ParkClient, error) {
 }
 
 func (parkLeader *ParkLeader) TryGetLeader(host string, port int) (*ParkClient, error) {
-	parkClient, err := NewParkClient(parkLeader.serviceName, parkLeader.host, parkLeader.port)
+	parkClient, err := NewParkClient(parkLeader.serviceName, host, port)
 	if err != nil {
 		logger.L().Warn("get rpc connect error", logger.String("serviceName", parkLeader.serviceName), logger.String("Host", host), logger.Int("Port", port), logger.Error(err))
 		return nil, err

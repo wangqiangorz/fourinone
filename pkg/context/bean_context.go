@@ -196,9 +196,9 @@ func startCacheFacadeByHost(serviceName, host string, port int, cacheGroups [][]
 	}
 	err := service.PutBean(serviceName, host, port, NewCacheFacade(serviceName, tryNum, groupServers))
 	if err != nil {
-		logger.L().Warn("start worker error", logger.String("serviceName", serviceName), logger.String("host", host), logger.Int("port", port), logger.Error(err))
+		logger.L().Warn("start cacheFacade error", logger.String("serviceName", serviceName), logger.String("host", host), logger.Int("port", port), logger.Error(err))
 	} else {
-		logger.L().Info("start worker success", logger.String("serviceName", serviceName), logger.String("host", host), logger.Int("port", port))
+		logger.L().Info("start cacheFacade success", logger.String("serviceName", serviceName), logger.String("host", host), logger.Int("port", port))
 
 	}
 	return err

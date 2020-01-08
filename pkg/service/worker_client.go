@@ -61,5 +61,8 @@ func (workerClient *WorkerClient) SetTask(task func(*model.Pikachu) (*model.Pika
 }
 
 func (workerClient *WorkerClient) Close() error {
-	return workerClient.client.Close()
+	if workerClient.client != nil {
+		return workerClient.client.Close()
+	}
+	return nil
 }

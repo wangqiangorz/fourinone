@@ -10,7 +10,7 @@
     servers=["127.0.0.1:8083"]
 [cachefacade]
     servicename="cachefacadeService"
-    server="127.0.0.1:8084"
+    server="127.0.0.1:8085"
     trynum=100
 [cachegroup]
     servers=[["127.0.0.1:8085"]]
